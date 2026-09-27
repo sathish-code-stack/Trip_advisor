@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tripadvisor Clone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="logo"><i class="fa-solid fa-owl"></i>Tripadvisor</div>
+    <div class="pill-btn"><i class="fa-solid fa-wand-magic-sparkles"></i>Plan with AI</div>
+    <nav class="nav-links">
+      <a>Discover</a>
+      <a>Review</a>
+      <a>More</a>
+      <span class="icon-btn"><i class="fa-regular fa-heart"></i></span>
+      <span class="icon-btn"><i class="fa-solid fa-globe"></i>INR</span>
+      <a class="signin">Sign in</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Where to?</h1>
+  <div class="tabs">
+    <span class="active"><i class="fa-solid fa-house"></i>Search All</span>
+    <span><i class="fa-regular fa-image"></i>Things to Do</span>
+    <span><i class="fa-solid fa-bed"></i>Hotels</span>
+    <span><i class="fa-solid fa-utensils"></i>Restaurants</span>
+  </div>
+  <div class="searchbar">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input placeholder="Places to go, things to do, hotels...">
+    <div class="ask-ai">Ask AI</div>
+    <div class="search-go">Search</div>
+  </div>
+</section>
+
+<div class="promo">
+  <div class="promo-img">
+    <svg class="promo-svg" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#0a2540"/><stop offset="55%" stop-color="#0d5a4f"/><stop offset="100%" stop-color="#0a2540"/>
+      </linearGradient></defs>
+      <rect width="500" height="400" fill="url(#sky)"/>
+      <path d="M0 260 Q120 180 250 250 T500 220 V400 H0 Z" fill="#0f7a63" opacity="0.7"/>
+      <circle cx="140" cy="90" r="60" fill="#3be3a8" opacity="0.35"/>
+      <circle cx="360" cy="140" r="90" fill="#2fd1a0" opacity="0.25"/>
+      <path d="M180 340 l30 -50 l30 50 z" fill="#092018"/>
+      <path d="M250 340 l25 -70 l25 70 z" fill="#0c281f"/>
+    </svg>
+    <div class="promo-tag">teapottwins</div>
+  </div>
+  <div class="promo-content">
+    <h2>Find things to do for everything you're into</h2>
+    <p>Browse 400,000+ experiences and book with us.</p>
+    <div class="book-now">Book now</div>
+  </div>
+  <div class="promo-controls"><i class="fa-solid fa-pause"></i></div>
+</div>
+
+<section class="block">
+  <h3>Find things to do by interest</h3>
+  <p class="sub">Whatever you're into, we've got it</p>
+  <div class="interest-grid">
+    <div class="interest-card">
+      <img src="assets/caption.jpg"/>
+      <p>Outdoors</p>
+    </div>
+    <div class="interest-card">
+      <img src="assets/food.jpg"/>
+      <p>Food</p>
+    </div>
+    <div class="interest-card">
+      <img src="assets/culture.jpg"/>
+      <p>Culture</p>
+    </div>
+    <div class="interest-card">
+      <img src="assets/water.jpg"/>
+      <p>Water</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <h3>Outdoor adventures in New Delhi</h3>
+  <p class="sub">Top picks based on traveler interest</p>
+  <div class="hcards">
+    <div class="hcard">
+      <div class="thumb">
+        <img src="assets/wanderon.jpg" alt="">
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+      </div>
+      <div class="info"><h4>Old Delhi Heritage Walking Tour</h4>
+        <div class="rating"><span>5.0</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></span><span class="count">(212)</span></div>
+        <div class="tags">Walking Tours</div></div>
+    </div>
+    <div class="hcard">
+      <div class="thumb">
+        <img src="assets/own trip.jpg" alt=""><div class="heart"><i class="fa-regular fa-heart"></i></div></div>
+      <div class="info"><h4>Taj Mahal Sunrise Day Trip</h4>
+        <div class="rating"><span>4.9</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></span><span class="count">(1,304)</span></div>
+        <div class="tags">Full-day Tours</div></div>
+    </div>
+    <div class="hcard">
+      <div class="thumb">
+        <img src="assets/private-driver-india.jpg" alt=""><div class="heart"><i class="fa-regular fa-heart"></i></div></div>
+      <div class="info"><h4>Aravalli Biodiversity Nature Trail</h4>
+        <div class="rating"><span>4.8</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></span><span class="count">(96)</span></div>
+        <div class="tags">Nature &amp; Wildlife Tours</div></div>
+    </div>
+    <div class="hcard">
+      <div class="thumb">
+        <img src="assets/wanderon.jpg" alt=""><div class="heart"><i class="fa-regular fa-heart"></i></div></div>
+      <div class="info"><h4>Yamuna Riverside Cycling Tour</h4>
+        <div class="rating"><span>4.9</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></span><span class="count">(58)</span></div>
+        <div class="tags">Bike Tours</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <h3>Top-rated tour operators near you</h3>
+  <p class="sub">Highly rated companies to help plan your trip</p>
+  <div class="hcards">
+    <div class="op-card">
+      <div class="thumb">
+        <img src="assets/exterior.jpg" alt=""><div class="badge">2026<br>✓</div></div>
+      <div class="info"><h4>WanderOn</h4>
+        <div class="rating"><span>4.9</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></span><span class="count">(4,258)</span></div>
+        <div class="tags">Sightseeing Tours, Bike Tours</div></div>
+    </div>
+    <div class="op-card">
+      <div class="thumb">
+       <img src="assets/ibis-delhi-airport.jpg" alt=""><div class="badge">2026<br>✓</div></div>
+      <div class="info"><h4>Private Driver India</h4>
+        <div class="rating"><span>5.0</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></span><span class="count">(653)</span></div>
+        <div class="tags">Taxis &amp; Shuttles</div></div>
+    </div>
+    <div class="op-card">
+      <div class="thumb">
+        <img src="assets/red-fox-hotel-delhi-airport.jpg" alt=""><div class="badge">2026<br>✓</div></div>
+      <div class="info"><h4>On His Own Trip</h4>
+        <div class="rating"><span>4.7</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-regular fa-circle"></i></span><span class="count">(1,052)</span></div>
+        <div class="tags">Hiking &amp; Camping Tours</div></div>
+    </div>
+    <div class="op-card">
+      <div class="thumb">
+         <img src="assets/park.jpg" alt=""><div class="badge">2026<br>✓</div></div>
+      <div class="info"><h4>Tripogram Club Pvt. Ltd.</h4>
+        <div class="rating"><span>4.4</span><span class="dots"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-regular fa-circle"></i></span><span class="count">(359)</span></div>
+        <div class="tags">Taxis &amp; Shuttles</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>About Tripadvisor</h4>
+      <a href="#">About Us</a>
+      <a href="#">Press</a>
+      <a href="#">Resources and Policies</a>
+      <a href="#">Careers</a>
+      <a href="#">Trust &amp; Safety</a>
+      <a href="#">Contact us</a>
+      <a href="#">Tripadvisor Technology Blog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#">Write a review</a>
+      <a href="#">Add a Place</a>
+      <a href="#">Join</a>
+      <a href="#">Travellers' Choice</a>
+      <a href="#">Help Centre</a>
+      <a href="#">Travel Stories</a>
+    </div>
+    
+  </div>
+
+  <div class="footer-bottom">
+    <div class="fb-left">
+      <i class="fa-solid fa-hotel footer-logo"></i>
+      <div class="fb-text">
+        <div class="copyright">© 2026 Tripadvisor LLC All rights reserved.</div>
+        <div class="fb-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy and Cookies Statement</a>
+        </div>
+      </div>
+    </div>
+    <div class="fb-right">
+      <div class="selects">
+        <select><option>₹ INR</option><option>$ USD</option><option>€ EUR</option></select>
+        <select><option>India</option><option>United States</option><option>United Kingdom</option></select>
+      </div>
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
