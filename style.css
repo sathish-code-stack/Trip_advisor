@@ -11,7 +11,8 @@ a{text-decoration:none; color:inherit;}
 .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
 
 /* header */
-header{position:sticky; top:0; background:#fff; z-index:50; border-bottom:1px solid var(--line);}
+header{position:sticky; top:0; background:#fff; z-index:50; 
+  border-bottom:1px solid var(--line);}
 .topbar{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; gap:20px; max-width:1200px; margin:0 auto; padding-top:calc(14px + env(safe-area-inset-top,0px));}
 .logo{display:flex; align-items:center; gap:8px; cursor: pointer; font-size:22px; font-weight:800; color:var(--ink); white-space:nowrap;}
 .logo i{color:var(--green-dark); font-size:26px;}
@@ -56,9 +57,7 @@ section.block{padding:0 24px 50px;}
 .interest-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
 .interest-card{position:relative; border-radius:16px; overflow:hidden; height:190px;}
 .interest-card svg{width:100%; height:100%;}
-/* NEW: size the real <img> the same way the old <svg> was sized, so it fills the card */
 .interest-card img{width:100%; height:100%; object-fit:cover; display:block;}
-/* CHANGED: selector now targets the new <p> caption instead of the old <span>, reset its default margin, and raised z-index above the ::after gradient */
 .interest-card p{position:absolute; left:16px; bottom:14px; color:#fff; font-weight:800; font-size:20px; z-index:3; text-shadow:0 2px 8px rgba(0,0,0,.45); margin:0;}
 .interest-card::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(to top, rgba(0,0,0,.45), transparent 55%);}
 
@@ -66,7 +65,6 @@ section.block{padding:0 24px 50px;}
 .hcard{border-radius:14px; overflow:hidden; border:1px solid var(--line); cursor:pointer;}
 .hcard .thumb{height:150px; position:relative;}
 .hcard .thumb svg{width:100%; height:100%;}
-/* NEW: size the real <img> inside hcard thumbs so it fills the 150px box instead of showing at natural size */
 .hcard .thumb img{width:100%; height:100%; object-fit:cover; display:block;}
 .hcard .heart{position:absolute; top:10px; right:10px; width:30px; height:30px; border-radius:50%; background:rgba(255,255,255,.9); display:flex; align-items:center; justify-content:center; font-size:14px; color:#333; z-index:2;}
 .hcard .info{padding:12px 14px 16px;}
@@ -80,7 +78,6 @@ section.block{padding:0 24px 50px;}
 
 .op-card{border-radius:14px; overflow:hidden; border:1px solid var(--line);}
 .op-card .thumb{height:110px; position:relative;}
-/* NEW: same fix for tour-operator thumbs */
 .op-card .thumb img{width:100%; height:100%; object-fit:cover; display:block;}
 .op-card .badge{position:absolute; left:10px; top:10px; background:var(--green); color:var(--ink); border-radius:50%; width:42px; height:42px; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800; text-align:center; line-height:1.1; z-index:2;}
 .op-card .info{padding:14px;}
@@ -90,7 +87,6 @@ section.block{padding:0 24px 50px;}
 
 footer{border-top:1px solid var(--line); padding:36px 24px; text-align:center; color:var(--gray); font-size:13px; font-weight:600;}
 
-/* smooth hover on the pill button */
 .pill-btn{
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
@@ -109,7 +105,6 @@ footer{border-top:1px solid var(--line); padding:36px 24px; text-align:center; c
   box-shadow: none;
 }
 
-/* keep it visible and sized sensibly at every width */
 @media(max-width:600px){
   .topbar{
     flex-wrap: nowrap;
@@ -150,7 +145,7 @@ footer{border-top:1px solid var(--line); padding:36px 24px; text-align:center; c
     gap:12px;
   }
   .searchbar > i.fa-magnifying-glass{
-    display:none; /* icon moves inline with input row below instead of floating alone */
+    display:none; 
   }
   .searchbar .search-row{
     display:flex;
